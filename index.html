@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <base href="index.html">
+    <script></script>
+    <style>
+         /* Pagination styles */
+        .pagination {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .pagination li {
+            margin: 0 5px;
+        }
+        .pagination li a {
+            text-decoration: none;
+            padding: 5px 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .pagination li a:hover {
+            background-color: #ddd;
+        }
+        .dropdown {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .dropdown select {
+            padding: 8px 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+            color: #333;
+            font-size: 16px;
+        }
+        .dropdown button {
+            margin-left: 10px;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .dropdown button:hover {
+            background-color: #0056b3;
+        }
+
+        body {
+            background-image: url('roldan2.jpeg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        /*media queries for responsitiviness*/
+        @media only screen and (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            header {
+                padding: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Happy Birthday to you </h1>
+    </header>
+    
+    <main>
+
+        
+        <!-- Dropdown menu and button -->
+        <div class="dropdown">
+            <select>
+                <option value="Page1.html">Lucky</option>
+                <option value="page2.html">Roldan</option>
+                <option value="page3.html">Emmanuel</option>
+                <option value="page4.html">Kemmi</option>
+                <option value="page5.html">Brenda</option>
+                <option value="page6.html">Jackson</option>
+                <option value="page7.html">Judith</option>
+                <option value="page8.html">Viola</option>
+                <option value="page9.html">Desiree</option>
+                <option value="page10.html">Precious</option>
+                <option value="page11.html">Lillian</option>
+                <option value="page12.html">Nansimwe kuzrawa</option>
+                <option value="page13.html">Musa</option>
+                <option value="page14.html">Astine</option>
+                <option value="page15.html">David</option>
+                <option value="page16.html">Jimmy</option>
+                <option value="page17.html">Mum</option>
+                <option value="page18.html">Micheal & Michealla</option>
+            </select>
+            <button onclick="goToPage()">Go</button>
+        </div>
+    </main>
+    
+    <script>
+        // JavaScript function to navigate to the selected page
+        function goToPage() {
+            var selectElement = document.querySelector('.dropdown select');
+            var selectedPage = selectElement.value;
+            window.location.href = selectedPage;
+        }
+    </script>
+    
+</body>
+</html>
